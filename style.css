@@ -22,7 +22,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
 }
 
 /* Set default font family and size */
@@ -30,7 +29,7 @@ body,
 input,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
@@ -97,5 +96,58 @@ p {
 }
 
 nav {
-    
+    background-color: hsl(var(--color-blue));
+    color: hsl(var(--color-white));
+}
+
+
+/* ----------------------- */
+/* Utilities               */
+/* ----------------------- */
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+/* ----------------------- */
+/* Layout                  */
+/* ----------------------- */
+
+.grid-wrapper {
+  grid-template-columns: 20% 80%;
+  grid-template-areas: "navbar content";
+  min-height: 100vh;
+}
+
+.navbar {
+  /* grid-area: navbar; */
+  background-color: hsl(var(--color-blue));
+  color: hsl(var(--color-white));
+}
+
+.main-content {
+  grid-area: content;
+  background-color: hsl(var(--color-gray));
+}
+
+.nav-icons {
+  fill: hsl(var(--color-white));
+  stroke: hsl(var(--color-white));
+  width: 1.6rem;
+  margin-right: 1rem;
+}
+/* Find a way to turn color to white */
+
+.main-meta {
+  border: 1px solid hsl(var(--color-gray));
+  box-shadow: 0 6px 10px hsl(var(--color-gray));
+  background-color: hsl(var(--color-white));
+}
+
+ul > li {
+  margin-bottom: .5rem;
 }

@@ -113,6 +113,14 @@ nav {
   display: flex;
 }
 
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
 /* ----------------------- */
 /* Layout                  */
 /* ----------------------- */
@@ -142,14 +150,38 @@ nav {
 }
 
 /* Find a way to turn color to white */
-.search { background-color: hsl(var(--color-white));}
+.search { 
+  background-color: hsl(var(--color-white));
+  padding: .5rem 1.5rem;
+}
 
 .search-icons {
   width: 1.6rem;
 }
 
+.search-inputs {
+  width: 40%;
+}
+
 #search-input {
   background-color: hsl(var(--color-gray));
+  width: 90%;
+}
+
+#search-top-row {
+  margin-bottom: 1rem;
+}
+
+.search-profile {
+  width: 25%;
+}
+
+
+#avatar {
+ border: 1px solid;
+ border-radius: 50%;
+ aspect-ratio: 1;
+ /* height: 10rem; */
 }
 
 .main-meta {
